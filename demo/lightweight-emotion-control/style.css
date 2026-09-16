@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
+  
+    background: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+  }
+  
+  .page {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+  }
+  
+  
+  /* Header */
+  
+  .hero {
+    padding: 90px 0 70px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    margin: 0 0 16px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #666666;
+  }
+  
+  .hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 18px;
+  
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+  
+    background: #ffffff;
+    color: #222222;
+  
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .button:hover {
+    background: #f5f5f5;
+  }
+  
+  
+  /* Sections */
+  
+  .section {
+    margin-bottom: 80px;
+  }
+  
+  .section h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+  }
+  
+  .section-description {
+    margin: 0 0 28px;
+    color: #666666;
+  }
+  
+  
+  /* Figure placeholder */
+  
+  .figure-placeholder {
+    min-height: 280px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px dashed #bbbbbb;
+    border-radius: 10px;
+  
+    background: #fafafa;
+    color: #888888;
+  }
+  
+  
+  /* Audio table */
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .audio-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+  }
+  
+  .audio-table th,
+  .audio-table td {
+    padding: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .audio-table th {
+    background: #f7f7f7;
+    font-weight: 600;
+  }
+  
+  .audio-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  audio {
+    width: 220px;
+    max-width: 100%;
+  }
+  
+  
+  /* Placeholder cards */
+  
+  .placeholder-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .placeholder-card {
+    min-height: 160px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px dashed #bbbbbb;
+    border-radius: 10px;
+  
+    background: #fafafa;
+    color: #888888;
+  }
+  
+  
+  /* Footer */
+  
+  .footer {
+    margin-top: 100px;
+    padding: 36px 0;
+  
+    text-align: center;
+    color: #888888;
+  
+    border-top: 1px solid #eeeeee;
+  }
+  
+  
+  /* Mobile */
+  
+  @media (max-width: 800px) {
+    .hero {
+      padding: 60px 0 50px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .placeholder-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .audio-table {
+      min-width: 800px;
+    }
+  }
