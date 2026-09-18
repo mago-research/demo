@@ -3,149 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Project Demo</title>
-
+  <meta
+    name="description"
+    content="PemoPlex adds explicit emotion control to full-duplex spoken dialogue models through lightweight LoRA fine-tuning."
+  />
+  <title>PemoPlex — Lightweight Emotion Control</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main class="page">
-
-    <!-- Header -->
+  <main id="top">
     <header class="hero">
-      <h1>Project Demo</h1>
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Full-duplex spoken dialogue</p>
+        <h1><span>PemoPlex</span>: Lightweight Emotion Control for Full-Duplex Spoken Dialogue Models</h1>
 
-      <p class="subtitle">
-        A demo page for presenting audio examples and project results.
-      </p>
+        <div class="authors" aria-label="Authors">
+          <span>Francesco Bonzi<sup>1,2,*</sup></span>
+          <span>Sujin Koo<sup>3,*</sup></span>
+          <span>Nayoung Park<sup>3,*</sup></span>
+          <span>Zhi Wen<sup>2</sup></span>
+          <span>Mirco Ravanelli<sup>1,2</sup></span>
+        </div>
+        <p class="affiliations">
+          <sup>1</sup>Concordia University &nbsp;·&nbsp;
+          <sup>2</sup>Mila – Quebec AI Institute &nbsp;·&nbsp;
+          <sup>3</sup>MAGO &nbsp;·&nbsp; <sup>*</sup>Equal contribution
+        </p>
 
-      <div class="hero-links">
-        <a class="button" href="#" target="_blank" rel="noopener noreferrer">
-          Paper
-        </a>
-
-        <a class="button" href="#" target="_blank" rel="noopener noreferrer">
-          Code
-        </a>
+        <div class="hero-actions">
+          <a class="button button-primary" href="assets/pemoplex-paper.pdf" target="_blank" rel="noopener noreferrer">
+            Read the paper
+          </a>
+          <a class="button button-secondary" href="#demo">Explore audio</a>
+        </div>
       </div>
     </header>
 
-
-    <!-- Overview -->
-    <section class="section">
-      <h2>Overview</h2>
-
-      <p class="section-description">
-        A short project description can be added here later.
-      </p>
-
-      <div class="figure-placeholder">
-        <span>Overview figure</span>
+    <section class="abstract-section" id="abstract">
+      <div>
+        <p class="eyebrow">Abstract</p>
+        <h2>Emotion control for real-time conversation</h2>
       </div>
+      <p>
+        Recent research has increasingly focused on real-time speech models capable of full-duplex
+        communication. However, reliable and controllable emotional expression remains challenging. While
+        text prompts can influence what a model says, they offer limited control over how it expresses it.
+        We introduce a lightweight fine-tuning strategy for full-duplex spoken dialogue models that enables
+        explicit control over four emotions (happy, angry, sad, and neutral) using simple keyword
+        conditioning. By training on synthetic dialogues that pair identical user inputs with varied
+        emotional responses, this approach enables the model to map explicit emotion prompts to distinct
+        acoustic patterns. Applied to PersonaPlex, a streaming full-duplex baseline, our approach adds no
+        inference-time overhead and significantly improves text and audio emotional control on our proposed
+        affective extension of AEQ-Bench, maintaining real-time interaction to 280 ms turn-taking latency.
+      </p>
     </section>
 
-
-    <!-- Audio Samples -->
-    <section class="section">
-      <h2>Audio Samples</h2>
-
-      <p class="section-description">
-        Example audio comparisons can be placed in this section.
-      </p>
-
-      <div class="table-wrapper">
-        <table class="audio-table">
-          <thead>
-            <tr>
-              <th>Sample</th>
-              <th>System A</th>
-              <th>System B</th>
-              <th>System C</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Example 1</td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-a.wav" type="audio/wav" />
-                </audio>
-              </td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-b.wav" type="audio/wav" />
-                </audio>
-              </td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-c.wav" type="audio/wav" />
-                </audio>
-              </td>
-            </tr>
-
-            <tr>
-              <td>Example 2</td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-d.wav" type="audio/wav" />
-                </audio>
-              </td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-e.wav" type="audio/wav" />
-                </audio>
-              </td>
-
-              <td>
-                <audio controls preload="none">
-                  <source src="audio/example-f.wav" type="audio/wav" />
-                </audio>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="section" id="overview">
+      <div class="section-heading">
+        <p class="eyebrow">Overview</p>
+        <h2>Control emotion without changing the architecture</h2>
+        <p>
+          Text prompts can guide what a spoken dialogue model says, but provide limited control over how it
+          sounds. PemoPlex fine-tunes PersonaPlex-7B with emotion-anchored synthetic dialogues, teaching the
+          model to connect simple emotion instructions with both lexical choices and acoustic prosody.
+        </p>
       </div>
+
+      <figure class="paper-figure">
+        <img
+          src="assets/pipeline.png"
+          alt="Four-stage PemoPlex data generation pipeline: prompt generation, emotional response generation, speech synthesis, and audio combination."
+        />
+      </figure>
     </section>
 
+    <section class="section demo-section" id="demo">
+      <div class="section-heading compact">
+        <p class="eyebrow">Audio demo</p>
+        <h2>One conversation, four emotional expressions</h2>
+        <p>
+          Compare responses generated from the same conversational context under different emotion
+          instructions. Audio samples can be connected here when the files are available.
+        </p>
+      </div>
 
-    <!-- Additional Section -->
-    <section class="section">
-      <h2>Additional Examples</h2>
-
-      <p class="section-description">
-        More examples or analysis can be added here later.
-      </p>
-
-      <div class="placeholder-grid">
-        <div class="placeholder-card">
-          Example block
-        </div>
-
-        <div class="placeholder-card">
-          Example block
-        </div>
-
-        <div class="placeholder-card">
-          Example block
-        </div>
+      <div class="emotion-grid">
+        <article class="emotion-card happy">
+          <h3>Happy</h3>
+          <span class="sample-status">Sample coming soon</span>
+        </article>
+        <article class="emotion-card sad">
+          <h3>Sad</h3>
+          <span class="sample-status">Sample coming soon</span>
+        </article>
+        <article class="emotion-card angry">
+          <h3>Angry</h3>
+          <span class="sample-status">Sample coming soon</span>
+        </article>
+        <article class="emotion-card neutral">
+          <h3>Neutral</h3>
+          <span class="sample-status">Sample coming soon</span>
+        </article>
       </div>
     </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Project Demo</p>
-    </footer>
 
   </main>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
