@@ -83,34 +83,25 @@
     <section class="section demo-section" id="demo">
       <div class="section-heading compact">
         <p class="eyebrow">Audio demo</p>
-        <h2>One conversation, four emotional expressions</h2>
+        <h2>Emotion Bench model comparison</h2>
         <p>
-          Compare responses generated from the same conversational context under different emotion
-          instructions. Audio samples can be connected here when the files are available.
+          Select an input and compare how each model responds when instructed to speak with a happy, sad,
+          angry, or neutral tone.
         </p>
       </div>
 
-      <div class="emotion-grid">
-        <article class="emotion-card happy">
-          <h3>Happy</h3>
-          <span class="sample-status">Sample coming soon</span>
-        </article>
-        <article class="emotion-card sad">
-          <h3>Sad</h3>
-          <span class="sample-status">Sample coming soon</span>
-        </article>
-        <article class="emotion-card angry">
-          <h3>Angry</h3>
-          <span class="sample-status">Sample coming soon</span>
-        </article>
-        <article class="emotion-card neutral">
-          <h3>Neutral</h3>
-          <span class="sample-status">Sample coming soon</span>
-        </article>
+      <div class="input-tabs" role="tablist" aria-label="Emotion Bench inputs">
+        <button type="button" role="tab" aria-selected="true" data-input-index="0">Input 01</button>
+        <button type="button" role="tab" aria-selected="false" data-input-index="1">Input 02</button>
+        <button type="button" role="tab" aria-selected="false" data-input-index="2">Input 03</button>
+        <button type="button" role="tab" aria-selected="false" data-input-index="3">Input 04</button>
       </div>
+
+      <div id="demo-panel" class="demo-panel" role="tabpanel" aria-live="polite"></div>
     </section>
 
   </main>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
