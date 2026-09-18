@@ -162,6 +162,13 @@ sup {
   color: var(--green-dark);
 }
 
+.button-disabled {
+  border-color: var(--line);
+  background: #f7f8f7;
+  color: #858d89;
+  cursor: default;
+}
+
 .abstract-section {
   display: grid;
   grid-template-columns: 1fr;
