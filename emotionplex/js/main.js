@@ -19,6 +19,36 @@ const inputs = [
     userAudio: null,
     responses: {},
   },
+  {
+    text: "Emotion Bench input 05 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
+  {
+    text: "Emotion Bench input 06 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
+  {
+    text: "Emotion Bench input 07 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
+  {
+    text: "Emotion Bench input 08 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
+  {
+    text: "Emotion Bench input 09 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
+  {
+    text: "Emotion Bench input 10 will be added here.",
+    userAudio: null,
+    responses: {},
+  },
 ];
 
 const models = [

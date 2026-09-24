@@ -250,11 +250,12 @@ sup {
   display: flex;
   gap: 0;
   margin-bottom: 34px;
+  overflow-x: auto;
   border-bottom: 1px solid var(--line);
 }
 
 .input-tabs button {
-  flex: 1;
+  flex: 1 0 100px;
   padding: 14px 18px 16px;
   border: 0;
   border-bottom: 2px solid transparent;
