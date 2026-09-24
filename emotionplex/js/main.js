@@ -56,7 +56,7 @@ const models = [
   { key: "freeze-omni", label: "Freeze-Omni" },
   { key: "raon-speech", label: "Raon Speech" },
   { key: "personaplex", label: "PersonaPlex" },
-  { key: "pemoplex", label: "PemoPlex", isOurs: true },
+  { key: "emotionplex", label: "EmotionPlex", isOurs: true },
 ];
 
 const emotions = [
