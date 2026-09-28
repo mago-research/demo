@@ -1,53 +1,43 @@
 const inputs = [
   {
-    text: "Emotion Bench input 01 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "05",
+    text: "The fighting had now become intermittent.",
   },
   {
-    text: "Emotion Bench input 02 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "08",
+    text: "Oppressive as the heat had been, it was now even more oppressive.",
   },
   {
-    text: "Emotion Bench input 03 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "07",
+    text: "We had been chased by them ourselves, more than once.",
   },
   {
-    text: "Emotion Bench input 04 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "04",
+    text: "A combination of Canadian capital quickly organized and petitioned for the same privileges.",
   },
   {
-    text: "Emotion Bench input 05 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "01",
+    text: "God bless 'em, I hope I'll go on seeing them forever.",
   },
   {
-    text: "Emotion Bench input 06 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "09",
+    text: "Hardly were our plans made public before we were met by powerful opposition.",
   },
   {
-    text: "Emotion Bench input 07 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "03",
+    text: "Each day she became a more vital part of him.",
   },
   {
-    text: "Emotion Bench input 08 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "02",
+    text: "Ah, we were very close together in that moment.",
   },
   {
-    text: "Emotion Bench input 09 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "06",
+    text: "To my surprise he began to show actual enthusiasm in my favor.",
   },
   {
-    text: "Emotion Bench input 10 will be added here.",
-    userAudio: null,
-    responses: {},
+    id: "10",
+    text: "But they make the mistake of ignoring their own duality.",
   },
 ];
 
@@ -90,7 +80,7 @@ function renderInput(index) {
     .map((model) => {
       const emotionSamples = emotions
         .map((emotion) => {
-          const source = input.responses[model.key]?.[emotion.key];
+          const source = `assets/audio/${input.id}/${model.key}/${emotion.key}.wav`;
           return renderAudioSlot(source, `${model.label}, ${emotion.label}`);
         })
         .join("");
@@ -110,7 +100,12 @@ function renderInput(index) {
   panel.innerHTML = `
     <div class="input-context">
       <span>User input</span>
-      <p>${input.text}</p>
+      <div class="input-content">
+        <p>${input.text}</p>
+        <audio controls preload="none" aria-label="User input ${input.id}">
+          <source src="assets/audio/${input.id}/user_input.wav" type="audio/wav" />
+        </audio>
+      </div>
     </div>
     <div class="comparison-scroll">
       <div class="comparison-grid">
