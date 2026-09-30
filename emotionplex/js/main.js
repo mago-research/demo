@@ -59,6 +59,18 @@ const emotions = [
 const panel = document.querySelector("#demo-panel");
 const tabs = [...document.querySelectorAll("[data-input-index]")];
 
+panel.addEventListener(
+  "play",
+  (event) => {
+    if (!(event.target instanceof HTMLAudioElement)) return;
+
+    panel.querySelectorAll("audio").forEach((audio) => {
+      if (audio !== event.target) audio.pause();
+    });
+  },
+  true,
+);
+
 function renderAudioSlot(source, label) {
   if (!source) {
     return '<div class="audio-slot"><span>Audio pending</span></div>';
