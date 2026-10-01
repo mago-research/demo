@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 5.870875
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "05",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "05/pemoplex/happy.wav",
+        "relative_path": "05/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/disgust_336-364_0338_happy_personaplex.wav",
         "sha256": "c1323aa06bedd7679724795948398d05ee89787e08dc154a115983a543e3a51e",
         "response_text": "Sounds like things are heating up big time. Happy days ahead. Haha, sounds like you're finally getting some proper attention.",
@@ -79,9 +79,9 @@
       "sad": {
         "sample": "05",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "05/pemoplex/sad.wav",
+        "relative_path": "05/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/disgust_336-364_0338_sad_personaplex.wav",
         "sha256": "e2937caf17773850234230716171a7c71f900e58e429dad0c20aac70fb5c340a",
         "response_text": "This must feel heavy on your mind doesn't it",
@@ -120,9 +120,9 @@
       "angry": {
         "sample": "05",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "05/pemoplex/angry.wav",
+        "relative_path": "05/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/disgust_336-364_0338_angry_personaplex.wav",
         "sha256": "755988ab2734ccee19b4198776b1fe0a221bf337d74fefb31e8f44739fca4333",
         "response_text": "Feeling frustrated myself. Why do these battles always have to get so heated and personal?",
@@ -153,9 +153,9 @@
       "neutral": {
         "sample": "05",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "05/pemoplex/neutral.wav",
+        "relative_path": "05/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/disgust_336-364_0338_neutral_personaplex.wav",
         "sha256": "519d26e5000620caeda362a524efd170d96639c27e59830b04cc9d32d2c5497b",
         "response_text": "Gotcha. Tough situation?",
@@ -734,7 +734,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",

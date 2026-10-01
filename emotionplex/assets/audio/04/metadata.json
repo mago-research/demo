@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 7.021247
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "04",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "04/pemoplex/happy.wav",
+        "relative_path": "04/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0023_happy_personaplex.wav",
         "sha256": "05493150f5d2dd6f6655118dd9cce9ce011609215b104ef3da7d6040bee7a124",
         "response_text": "That's awesome! Great work!",
@@ -79,9 +79,9 @@
       "sad": {
         "sample": "04",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "04/pemoplex/sad.wav",
+        "relative_path": "04/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0023_sad_personaplex.wav",
         "sha256": "3c6a4e45ff0e4c9aaea3148ef582942c1c8a0f1325aaecd8046ba1c7a3606574",
         "response_text": "Sounds like things got sorted quickly I' miss it if we don't see each other's new opportunities",
@@ -120,9 +120,9 @@
       "angry": {
         "sample": "04",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "04/pemoplex/angry.wav",
+        "relative_path": "04/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0023_angry_personaplex.wav",
         "sha256": "36002ad362b69e98410df1847588293848af68f47d982a62a1d1af8b939a28f6",
         "response_text": "Sounds like a double standard in practice.",
@@ -153,9 +153,9 @@
       "neutral": {
         "sample": "04",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "04/pemoplex/neutral.wav",
+        "relative_path": "04/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0023_neutral_personaplex.wav",
         "sha256": "f550257a644656e2bfb13eca47ce498383dbe4b776987ad3440b7b369ebf306d",
         "response_text": "Sounds like it's moving forward now that they've got that petition submitted. What's next on the plan?",
@@ -713,7 +713,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",

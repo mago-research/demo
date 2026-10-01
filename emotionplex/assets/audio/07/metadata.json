@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 6.336437
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "07",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "07/pemoplex/happy.wav",
+        "relative_path": "07/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/amused_309-336_0316_happy_personaplex.wav",
         "sha256": "2ee4e2eef2f8b94711987e0a59831129a1e6cefed8012a92106976cbffddd0a1",
         "response_text": "Sounds like an exciting adventure. Sure thing. Let's talk about your plan for the next time.",
@@ -79,9 +79,9 @@
       "sad": {
         "sample": "07",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "07/pemoplex/sad.wav",
+        "relative_path": "07/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/amused_309-336_0316_sad_personaplex.wav",
         "sha256": "2c89b4403a0ddb6c7df4ab2cc827ca56e9791c9560006111e61c0e15d8153328",
         "response_text": "Sadness lingers don't you think I should've known this would happen anyway How's everyone doing",
@@ -120,9 +120,9 @@
       "angry": {
         "sample": "07",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "07/pemoplex/angry.wav",
+        "relative_path": "07/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/amused_309-336_0316_angry_personaplex.wav",
         "sha256": "26690854481196a0272646c122b4892645f17140df87e2cf7959fd6abd461d93",
         "response_text": "Oh, come on, that's ridiculous. They should have known better than to mess with your territory.",
@@ -153,9 +153,9 @@
       "neutral": {
         "sample": "07",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "07/pemoplex/neutral.wav",
+        "relative_path": "07/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/amused_309-336_0316_neutral_personaplex.wav",
         "sha256": "2e9e0f6257938167aa587f24698befacb5b920bdb0e86745d5577480bb85db2c",
         "response_text": "Sounds like an interesting story. Did you manage to escape this time?",
@@ -717,7 +717,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",

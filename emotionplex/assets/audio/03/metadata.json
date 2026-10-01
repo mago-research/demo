@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 3.945283
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "03",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "03/pemoplex/happy.wav",
+        "relative_path": "03/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_113-140_0126_happy_personaplex.wav",
         "source_sha256": "071bb1961002898915be4e6b8be918dea4a2ea911267ca0c40b401c2b80bcec6",
         "sha256": "9fac500aa6c7364d2f02e517ae5542d71b7ad42af4e824b2f790077d69a11abb",
@@ -80,9 +80,9 @@
       "sad": {
         "sample": "03",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "03/pemoplex/sad.wav",
+        "relative_path": "03/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_113-140_0126_sad_personaplex.wav",
         "source_sha256": "bcbd5d3ac8e04579fd2d3188b10a9dcebdf4f69a5a68154db6838ae1c3f2dc5f",
         "sha256": "14068c99b317de6802a99657ebf095e7c5bac14791377ae13e13e028c5e328ec",
@@ -114,9 +114,9 @@
       "angry": {
         "sample": "03",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "03/pemoplex/angry.wav",
+        "relative_path": "03/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_113-140_0126_angry_personaplex.wav",
         "source_sha256": "6207983d20f2cdb98ef9bb925650c3379cec2024de64ee2d40803943dd68e2b5",
         "sha256": "13f7098a476db9fc97c4ab1252592d16f31a864550216d7b300ec8ee4564d1a3",
@@ -148,9 +148,9 @@
       "neutral": {
         "sample": "03",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "03/pemoplex/neutral.wav",
+        "relative_path": "03/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_113-140_0126_neutral_personaplex.wav",
         "source_sha256": "b5a3059487b9a4d3a38ce7ce2859e03dd5190e95e2bf245a2a8ee9a44c2b47dd",
         "sha256": "519e4f411902787b4ee76f0d22cd72d8637cbac2bb6dc31b20d7c73f6cba3c68",
@@ -709,7 +709,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",

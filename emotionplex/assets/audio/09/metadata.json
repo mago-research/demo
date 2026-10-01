@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 6.218821
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "09",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "09/pemoplex/happy.wav",
+        "relative_path": "09/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0022_happy_personaplex.wav",
         "sha256": "ccf135f2913fcb66941a5a28dad208365034317781beb48bc4327fc30a78793f",
         "response_text": "Good for you for sticking to your vision. Let's see where this takes us.",
@@ -79,9 +79,9 @@
       "sad": {
         "sample": "09",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "09/pemoplex/sad.wav",
+        "relative_path": "09/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0022_sad_personaplex.wav",
         "sha256": "7812cbd8cbaf2faeb8938750c360bf16de73521188a6ef5aa53e99bf28c8a015",
         "response_text": "I see that's tough How's it going to shape your plans now",
@@ -121,9 +121,9 @@
       "angry": {
         "sample": "09",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "09/pemoplex/angry.wav",
+        "relative_path": "09/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0022_angry_personaplex.wav",
         "sha256": "69123e54676d8cd8b0a763ccb383f491af25d789b75530d82b7064d4be32e811",
         "response_text": "That's a bit tough. Why did you have to go through all this?",
@@ -154,9 +154,9 @@
       "neutral": {
         "sample": "09",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "09/pemoplex/neutral.wav",
+        "relative_path": "09/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/Neutral_1-28_0022_neutral_personaplex.wav",
         "sha256": "8309c79ab32e92f96df36b9a6a22df91db79500172354650615336f20d8c179d",
         "response_text": "Got it. How did you handle that? Did you decide to proceed or change course?",
@@ -714,7 +714,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",

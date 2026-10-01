@@ -42,13 +42,13 @@
     "duration_before_trim_seconds": 5.961188
   },
   "models": {
-    "pemoplex": {
+    "emotionplex": {
       "happy": {
         "sample": "08",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "happy",
-        "relative_path": "08/pemoplex/happy.wav",
+        "relative_path": "08/emotionplex/happy.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_197-364_0217_happy_personaplex.wav",
         "sha256": "3f2d3e69a615d3b44bcfe67b0f743f861656742099a84dd8101b57e081ce4619",
         "response_text": "Sounds like you've been holding back for a long time. Feeling better now.",
@@ -79,9 +79,9 @@
       "sad": {
         "sample": "08",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "sad",
-        "relative_path": "08/pemoplex/sad.wav",
+        "relative_path": "08/emotionplex/sad.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_197-364_0217_sad_personaplex.wav",
         "sha256": "ca3a057765125ad7c919d1e739f24645f69a8b806199e344ec4ae3fd24f7b78c",
         "response_text": "I see you're still feeling heavy with this heat, missing those days of light and bright.",
@@ -112,9 +112,9 @@
       "angry": {
         "sample": "08",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "angry",
-        "relative_path": "08/pemoplex/angry.wav",
+        "relative_path": "08/emotionplex/angry.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_197-364_0217_angry_personaplex.wav",
         "sha256": "8096335ffafcb99729f1393ab5872c20393297d65916e8fe1072b0dc2a7a2a41",
         "response_text": "This heat is infuriatingly hot today, isn't it?",
@@ -145,9 +145,9 @@
       "neutral": {
         "sample": "08",
         "kind": "model_output",
-        "model": "pemoplex",
+        "model": "emotionplex",
         "emotion": "neutral",
-        "relative_path": "08/pemoplex/neutral.wav",
+        "relative_path": "08/emotionplex/neutral.wav",
         "source_path": "/data/s2s_en/workspace/sujin/workspace/emotion_fran_recognize/reports/aeq_metric3_voice_variants/francesco_sft_natf2/wavs/neutral_197-364_0217_neutral_personaplex.wav",
         "sha256": "1759d07e83fa62b7cf18f978d2932d7411746d44d0a57e1df835d25f72d9359d",
         "response_text": "Got it. The heat's kicked up even more. How's everyone coping?",
@@ -705,7 +705,7 @@
     "edge_padding_seconds": 0.08
   },
   "model_order": [
-    "pemoplex",
+    "emotionplex",
     "personaplex",
     "minicpm-o",
     "freeze-omni",
